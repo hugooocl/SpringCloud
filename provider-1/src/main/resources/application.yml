@@ -1,0 +1,15 @@
+# 注册到 eureka server 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20001/eureka/
+server:
+  port: 20005
+spring:
+  application:
+    name: provider
+
+feign:
+  hystrix:
+    enabled: true
+
